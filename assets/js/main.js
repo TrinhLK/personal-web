@@ -432,7 +432,7 @@ jQuery(document).ready(function($) {
 
     });
 
-    $('#resume').prev('h2.resp-accordion').click(function() {
+    $('#resume').click(function() {
 
         $('.skillbar').each(function() {
             $(this).find('.skillbar-bar').width(0);
