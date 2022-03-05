@@ -150,28 +150,19 @@
 	<div class="row">
 
 	    <!-- Profile Image -->
-	    <div class="col-lg-12 col-md-12 col-sm-3 col-xs-12 " style="margin-bottom: 30px !important;">
-
-
-
+	    <div class="col-lg-12 col-md-12 col-sm-3 col-xs-12 " style="margin-bottom: 15px !important;">
 	         <div class="image-holder one" id="pic_prof_1" style="display:block">
-
 	                <img class="head-image up circle" src="images/img/up.jpeg" width="150" height="150" alt="" />
-
-
 	        </div>
-
 	        <!-- style for simple image profile -->
 	   		<div class="circle-img" id="pic_prof_2" style="display:none"></div>
-
-
 	    </div>
 	    <!-- End Profile Image -->
 
 	    <!-- Begin profile information -->
 	    <div class="col-lg-12 col-md-12 col-sm-9 col-xs-12">
 	        <!-- Profile info -->
-	        <div id="profile_info" style="margin-bottom: 30px !important;">
+	        <div id="profile_info" style="margin-bottom: 15px !important;">
 	            <h1 id="name" class="transition-02">Trinh, Le-Khanh</h1>
 	            <h4 class="line">Researcher</h4>
 	            <h6><span class="fa fa-map-marker"></span>Lille, France</h6>
@@ -180,7 +171,7 @@
 
 
 	        <!-- Profile Description -->
-	        <div id="profile_desc" style="margin-bottom: 30px !important;">
+	        <div id="profile_desc" style="margin-bottom: 15px !important;">
 	            <p style="text-align:center;">
 	            	A Ph.D. student at INRIA - Lille Nord Europe and University of Lille.
 	            </p>
@@ -190,7 +181,7 @@
 
 
 	        <!-- Name -->
-	        <div class="social-container">
+	        <div class="social-container" style="margin-bottom: 15px !important;">
 	          <div class="social-box">
 	             <a href="https://www.facebook.com/trinh.lekhanh1/"><i class="fa fa-facebook"></i></a>
 	          </div>
@@ -214,32 +205,43 @@
 	<!-- end profile -->
 
 	<div class="col-md-9 flexy_content" style="padding-left: 0;padding-right: 0;">
-    
-        <div class="vertical-menu resp-vtabs">
-            <a href="profile.html" class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a active">
+    <div id="verticalTab">
+        <ul class="resp-tabs-list">
+            <li class="tabs-profile hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a profile" data-tab-name="profile">
+            <a href="#profile">         
                 <span class="tite-list">profile</span>
                 <i class="fa fa-user icon_menu icon_menu_active"></i>
             </a>
-            <a href="cv.html" class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a ">
+            </li>
+
+            <li class="tabs-resume hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="resume">
+            <a href="cv.html"> 
                 <span class="tite-list">resume</span>
-                <i class="fa fa-tasks icon_menu "></i>
-            </a>
-            <a href="blog.html" class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a ">
+                <i class="fa fa-tasks icon_menu"></i>
+                </a>
+            </li>
+
+            <li class="tabs-blog hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="blog">
+                <a href="blog.html">
                 <span class="tite-list">blog</span>
                 <i class="fa fa-bullhorn icon_menu"></i>
-            </a>
-            <a href="contact.html" class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a " style="margin-bottom: 195px !important;">
+                </a>
+            </li>
+
+            <li class="tabs-contact hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="contact" style="margin-bottom: 195px !important;"> 
+                <a href="contact.html">
                 <span class="tite-list">contact</span>
-                <i class="fa fa-envelope icon_menu"></i>
-            </a>
-    
+                <i class="fa fa-envelope icon_menu"></i> 
+                </a>
+            </li>
+
             <a href="https://www.dropbox.com/s/ynbvvcazo4iffbq/trinhlk_CV.pdf?dl=0" id="print"><i class="fa fa-print icon_print"></i> </a>
             <a href="https://www.dropbox.com/s/ynbvvcazo4iffbq/trinhlk_CV.pdf?dl=0" id="downlowd"><i class="fa fa-download icon_print"></i> </a>
-        </div>
+        </ul>
         
-        <div class="tabs-container">
+        <div class="resp-tabs-container">
             <!-- profile -->
-<div id="profile" class="content_2">
+            <div id="profile" class="content_2">
     <!-- .title -->
 <h1 class="h-bloc">Profile - About Me</h1>
 
@@ -309,7 +311,7 @@
     <div class="col-md-6 profile-r">
         <div class="cycle-slideshow">
             <img src="images/img-profile/about_5.jpg" alt="" />
-            <img src="images/img-profile/about_2.png" alt="" />
+            <img src="images/img-profile/about_2.jpeg" alt="" />
             <img src="images/img-profile/about_3.png" alt="" />
             <img src="images/img-profile/about_4.jpeg" alt="" />
             <img src="images/img-profile/about_1.jpg" alt="" />
@@ -318,7 +320,7 @@
     </div>
 
 </div>
-
+<br/>
 
 <!-- begin service -->
 <div class="clear"></div>
@@ -368,9 +370,517 @@
 
 <div class="clear"></div>
 </div>
-        </div>
-         <!-- End Vertical-menu -->
+<script type="text/javascript" src="assets/js/jquery.cycle2.min.js"></script>
+<!-- End .profile -->
+            <!-- end profile -->
 
+            <!-- .resume -->
+          <div id="resume" class="content_2">
+            <!-- .title -->
+            <h1 class="h-bloc">Resume - Personal Info</h1>
+
+            <div class="row">
+              <!-- .resume-right -->
+              <div class="col-md-6">
+                
+                <div
+                  class="title_content"
+                  style="margin-bottom: 5px"
+                >
+                  <div class="text_content">Education</div>
+                  <div class="clear"></div>
+                </div>
+                <!-- /.title_content -->
+
+                <!-- .attributes -->
+                <ul class="attributes">
+                  <li class="first">
+                    <h5>
+                      Ph.D student in Computer Science
+                      <span class="duration"
+                        ><i class="fa fa-calendar color"></i> 2019 -
+                        present</span
+                      >
+                    </h5>
+                    <h6>
+                      <span class="fa fa-book"></span> Inria Lille,
+                      Nord-Europe (Univ. of Lille)
+                    </h6>
+                    <p>
+                      Design of Correct-by-Construction Self-adaptive Cloud Applications using Formal Methods
+                    </p>
+                  </li>
+                  <li>
+                    <h5>
+                      Master of Information Technology
+                      <span class="duration"
+                        ><i class="fa fa-calendar color"></i> 2016 -
+                        2018</span
+                      >
+                    </h5>
+                    <h6>
+                      <span class="fa fa-book"></span> Japan
+                      Advanced Institute of Science and Technology
+                      (JAIST)
+                    </h6>
+                    <p>
+                      Formalization and Verification of AUTOSAR OS
+                      Standard’s Memory Protection.
+                    </p>
+                  </li>
+                  <li>
+                    <h5>
+                      Bachelor of Information Technology
+                      <span class="duration"
+                        ><i class="fa fa-calendar color"></i> 2010 -
+                        2014</span
+                      >
+                    </h5>
+                    <h6>
+                      <span class="fa fa-book"></span> University of
+                      Engineering and Technology, VNUH
+                    </h6>
+                    <p>
+                      A Method and Tool supporting for Automated
+                      Testing Of Web Applications.
+                    </p>
+                  </li>
+                </ul>
+                <!-- /.attributes -->
+                <br />
+                
+                <!-- .title_content -->
+                <div class="title_content" style="float: none">
+                  <div class="text_content">Programming Skills</div>
+                  <div class="clear"></div>
+                </div>
+                <!-- /.title_content -->
+
+                <div class="skills">
+                  <!-- .skillbar -->
+                  <div class="skillbar clearfix" data-percent="90%">
+                    <div class="skillbar-title">
+                      <span
+                        >Foundation Programming:
+                        <i>C/C++, Java Core, ...</i></span
+                      >
+                    </div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">90%</div>
+                  </div>
+                  <!-- /.skillbar -->
+
+                  <!-- .skillbar -->
+                  <div class="skillbar clearfix" data-percent="90%">
+                    <div class="skillbar-title">
+                      <span
+                        >Web Programming:
+                        <i>PhP, Java Webapp, Wordpress, ...</i></span
+                      >
+                    </div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">90%</div>
+                  </div>
+                  <!-- /.skillbar -->
+
+                  <!-- .skillbar -->
+                  <div class="skillbar clearfix" data-percent="85%">
+                    <div class="skillbar-title">
+                      <span
+                        >Functional Programming:
+                        <i>Ocaml, CafeOBJ</i></span
+                      >
+                    </div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">85%</div>
+                  </div>
+                  <!-- /.skillbar -->
+
+                  <!-- .skillbar -->
+                  <div class="skillbar clearfix" data-percent="80%">
+                    <div class="skillbar-title">
+                      <span
+                        >Theorem Prover:
+                        <i>Isabelle, Event-B</i></span
+                      >
+                    </div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                  </div>
+                  <!-- /.skillbar -->
+                </div>
+
+
+                <!-- .title_content -->
+                <div class="title_content" style="float: none">
+                  <div class="text_content">Hobbies</div>
+                  <div class="clear"></div>
+                </div>
+                <!-- /.title_content -->
+
+                <div class="skills">
+                  <!-- .skillbar -->
+                  <div class="skillbar clearfix" data-percent="80%">
+                    <div class="skillbar-title">
+                      <span>Guitar</span>
+                    </div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                  </div>
+                  <!-- /.skillbar -->
+
+                  <!-- .skillbar -->
+                  <div class="skillbar clearfix" data-percent="95%">
+                    <div class="skillbar-title">
+                      <span>DotA</span>
+                    </div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">95%</div>
+                  </div>
+                  <!-- /.skillbar -->
+
+                  <!-- .skillbar -->
+                  <div class="skillbar clearfix" data-percent="85%">
+                    <div class="skillbar-title">
+                      <span>Reading</span>
+                    </div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">85%</div>
+                  </div>
+                  <!-- /.skillbar -->
+                </div>
+
+
+                <!-- .title_content -->
+                <div class="title_content" style="float: none">
+                  <div class="text_content">My Resume</div>
+                  <div class="clear"></div>
+                </div>
+                <!-- /.title_content -->
+
+                <!-- .download_resume -->
+                <a
+                  class="download"
+                  style="margin: 0; float: left"
+                  href="https://www.dropbox.com/s/ynbvvcazo4iffbq/trinhlk_CV.pdf?dl=0"
+                >
+                  <span data-hover="Download My Resume"
+                    ><i
+                      class="glyphicon glyphicon-download-alt"
+                    ></i>
+                    Download My Resume</span
+                  >
+                </a>
+                <!-- /.download_resume -->
+              </div>
+              <!-- /.resume-right -->
+
+              <!-- .resume-left -->
+              <div class="col-md-6 resume-left">
+                
+                <!-- .title_content -->
+                <div class="title_content">
+                  <div class="text_content">Awards</div>
+                  <div class="clear"></div>
+                </div>
+                <!-- /.title_content -->
+
+                <!-- .attributes -->
+                <ul class="attributes">
+                  <li class="first">
+                    <p style="color: #ef3e96">
+                      <i class="fa fa-calendar color"></i> 2017
+                    </p>
+                    <h5>
+                      Master’s program scholarship (for top 10%)
+                    </h5>
+                    <h6>
+                      <span class="fa fa-trophy"></span> JAIST
+                    </h6>
+                  </li>
+                  <li>
+                    <p style="color: #ef3e96">
+                      <i class="fa fa-calendar color"></i> 2016
+                    </p>
+                    <h5>JASSO scholarship</h5>
+                    <h6>
+                      <span class="fa fa-trophy"></span> JASSO
+                    </h6>
+                  </li>
+                  <li>
+                    <p style="color: #ef3e96">
+                      <i class="fa fa-calendar color"></i> 2014
+                    </p>
+                    <h5>
+                      Encourage Academic Scholarship for Outstanding
+                      Thesis
+                    </h5>
+                    <h6>
+                      <span class="fa fa-trophy"></span> UET, VNUH
+                    </h6>
+                  </li>
+                  <li>
+                    <p style="color: #ef3e96">
+                      <i class="fa fa-calendar color"></i> 2014
+                    </p>
+                    <h5>
+                      First Prize in “The Student Academic Research
+                      Contest”
+                    </h5>
+                    <h6>
+                      <span class="fa fa-trophy"></span> Faculty of
+                      Information Technology, UET, VNUH
+                    </h6>
+                  </li>
+                  <li>
+                    <p style="color: #ef3e96">
+                      <i class="fa fa-calendar color"></i> 2013
+                    </p>
+                    <h5>
+                      First Prize in “The Student Academic Research
+                      Contest”
+                    </h5>
+                    <h6>
+                      <span class="fa fa-trophy"></span> Faculty of
+                      Information Technology, UET, VNUH
+                    </h6>
+                  </li>
+                  <li>
+                    <p style="color: #ef3e96">
+                      <i class="fa fa-calendar color"></i> 2011-2014
+                    </p>
+                    <h5>
+                      Encourage Academic Scholarship for Outstanding
+                      Students
+                    </h5>
+                    <h6>
+                      <span class="fa fa-trophy"></span> UET, VNUH
+                    </h6>
+                  </li>
+                </ul>
+                <br />
+              </div>
+              <!-- /.resume-left -->
+            </div>
+
+            <div style="clear: both"></div>
+
+            <!-- client reference -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="reference clearfix">
+                  <!-- .title_content -->
+                  <div
+                    class="title_content"
+                    style="margin-bottom: 5px"
+                  >
+                    <div class="text_content">Reference</div>
+                    <div class="clear"></div>
+                  </div>
+                  <!-- /.title_content -->
+
+                  <ul>
+                    <li class="clearfix">
+                      <a href="https://www.bliudze.me/simon">
+                        <img
+                          src="https://i2.wp.com/www.bliudze.me/simon/wp-content/uploads/2019/08/simon-orangy-200x200.jpg?resize=200%2C200&ssl=1"
+                          class="img_reference"
+                          width="100"
+                          height="100"
+                          alt=""
+                        />
+                        <span>Simon Bliudze, Dr.</span>
+                        <p>
+                          Researcher at INRIA Lille – Nord Europe
+                          and a part-time Assistant Professor at the
+                          Computer Science department of École
+                          polytechnique
+                        </p>
+                      </a>
+                    </li>
+                    <li class="clearfix">
+                      <a
+                        href="https://uet.vnu.edu.vn/~hungpn/index_en.htm"
+                      >
+                        <img
+                          src="https://uet.vnu.edu.vn/~hungpn/images/hungpn.jpg"
+                          class="img_reference"
+                          width="100"
+                          height="100"
+                          alt=""
+                        />
+                        <span>Pham Ngoc Hung, Assoc. Prof.</span>
+                        <p>
+                          Vice Dean of Faculty of Information
+                          Technology, University of Engineering and
+                          Technology, Vietnam National University,
+                          Hanoi
+                        </p>
+                      </a>
+                    </li>
+                    <li class="clearfix">
+                      <a
+                        href="https://www.jaist.ac.jp/english/areas/sn/laboratory/aoki.html"
+                      >
+                        <img
+                          src="https://www.jaist.ac.jp/english/areas/sn/laboratory/images/aoki.jpg"
+                          class="img_reference"
+                          width="100"
+                          height="100"
+                          alt=""
+                        />
+                        <span>AOKI Toshiaki, Prof.</span>
+                        <p>
+                          Realize Safety and Security by Advanced
+                          Science and Technology
+                        </p></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div style="clear: both"></div>
+            </div>
+          </div>
+          <!-- End .resume -->
+
+            <!-- blog -->
+            <div id="blog" class="content_2">
+                <h1 class="h-bloc">NEWS</h1> 
+                <div class="row">
+                    <div class="title_content" style="float: none;">
+                        <div class="text_content">NOT UPDATED YET</div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- end blog -->
+
+            <!-- contact -->
+            <div id="contact" class="content_2">
+                <h1 class="h-bloc">Publications and Contact Info</h1>
+                <div class="row">
+                <div class="col-md-12">   
+                    <div class="reference clearfix"> 
+                        <div class="title_content" style="margin-bottom:5px">
+                            <div class="text_content"><a href="https://scholar.google.com/citations?user=Y1d3evoAAAAJ&hl=en&oi=ao">Publications</a></div>
+                            <div class="clear"></div>
+                        </div>
+                        <ul>
+                        <li>
+                             <span>Son Nguyen, Hung Phan, <b>Trinh Le</b>, and Tien N. Nguyen.</span> <i>Suggesting natural method names to check name consistencies</i>. In Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering (ICSE '20). Association for Computing Machinery, New York, NY, USA, 1372–1384. 2020. DOI:<a href="https://doi.org/10.1145/3377811.3380926">https://doi.org/10.1145/3377811.3380926 </a>
+                        </li>
+                        <li>
+                            <span><b>Le Khanh Trinh</b>, Yuki Chiba, and Toshiaki Aoki</span>, <i>Formalization and Verification of AUTOSAR OS Standard's Memory Protection</i>, 2018 International Symposium on Theoretical Aspects of Software Engineering (TASE), Guangzhou, 2018, pp. 68-75. 
+                            DOI:<a href="10.1109/TASE.2018.00017">10.1109/TASE.2018.00017 </a>
+                        </li>
+                        <li>
+                            <span><b>Le Khanh Trinh</b>, Vo Dinh Hieu, Pham Ngoc Hung</span>, <i>A Method for Automated User Interaction Testing of Web Applications</i>, Research, Development and Application on Information Technology and Communication Technology, Volume E-3, No.8(11), 2015.
+                        </li>
+                        <li>
+                            <span>Duong Hoang-Minh, <b>Le Khanh Trinh</b>, Pham Ngoc Hung</span>, <i>In Computing and Communication Technologies, Research, Innovation, and Vision for the Future (RIVF), 2013 IEEE RIVF International Conference on, pages 22–26, Nov 2013.
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                    <div class="col-lg-12">
+                        <div class="row" id="contact-user">
+                            <div class="border-list"></div>
+                            <div class="col-md-5">
+                                <div class="contact-info">
+                                    <!--<h3 class="main-heading"><span>Contact info</span></h3>-->
+
+                                    <div class="title_content" style="float: none;">
+                                        <div class="text_content">Contact info</div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <ul>
+                                        <li><span class="span-info"><i class="glyphicon glyphicon-map-marker"></i> Address:</span> Lille, France.<br /><br /></li>
+                                        <li><span class="span-info"><i class="glyphicon glyphicon-envelope"></i> Email:</span> trinh.le-khanh@inria.fr</li>
+                                        <li><span class="span-info"><i class="glyphicon glyphicon-phone"></i> Phone:</span> +33 (0) 7 64 43 22 10</li>
+                                        <li><span class="span-info"><i class="glyphicon glyphicon-globe"></i> Website:</span> www.trinhlk.github.io</li>
+                                        <li><span class="span-info"><i class="glyphicon glyphicon-comment"></i> Skype:</span> trinhlk.vnu@gmail.com</li>
+                                    </ul>
+                                </div>
+                                <!-- /Contact Info -->
+                                <div class="clear"></div>
+
+                                <!--<h3 class="main-heading" style="margin-left: 22px;"><span>Follow me</span></h3>-->
+
+                                <div class="title_content tiltle_contacts" style="float: none;">
+                                    <div class="text_content">Follow me</div>
+                                    <div class="clear"></div>
+                                </div>
+
+                            
+
+                            <div class="social-container">
+
+                            <div id="profile_social"> <a href="https://www.facebook.com/trinh.lekhanh1/"><i class="fa fa-facebook"></i></a> </div>
+                            <div id="profile_social"> <a href="https://twitter.com/TrinhLeKhanh"><i class="fa fa-twitter"></i></a> </div>
+                            <div id="profile_social"> <a href="https://www.linkedin.com/in/l%C3%AA-kh%C3%A1nh-tr%C3%ACnh-874994152/"><i class="fa fa-linkedin"></i></a> </div>
+                            <div id="profile_social"> <a href="https://github.com/TrinhLK"><i class="fa fa-github"></i></a> </div>
+
+                            </div>
+
+                      
+
+
+                            </div>
+
+                            <div class="col-md-7">
+                                <!-- Contact Form -->
+                                <div class="title_content" style="float: none;">
+                                    <div class="text_content">Let's keep in touch</div>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <div class="contact-form">
+                                    <!--<h3 class="main-heading"><span>Let's keep in touch</span></h3>-->
+
+
+
+                                    <div id="contact-status"></div>
+
+                                    <form action="#" id="contactform">
+                                        <p class="form-group" id="contact-name">
+                                            <label for="name">Your Name</label>
+                                            <input type="text" name="name" class="form-control name-contact" id="inputSuccess" placeholder="Name..." />
+                                        </p>
+                                        <p class="form-group" id="contact-email"> 
+                                            <label for="email">Your Email</label>
+                                            <input type="text" name="email" class="form-control email-contact" id="inputSuccess" placeholder="Email..." />
+                                        </p>
+
+                                        <p class="form-group" id="contact-message">
+                                            <label for="message">Your Message</label>
+                                            <textarea name="message" cols="88" rows="6" class="form-control message-contact" id="inputError" placeholder="Message..."></textarea>
+                                        </p>
+                                        <input type="reset" name="reset" value="CLEAR" class="reset">
+                                        <!-- <input type="submit" name="submit" value="SEND MESSAGE" class="submit">-->
+
+                                        <section class="button-demo" style="display: inline-block;">
+                                            <a href="mailto:trinhlk.inria@gmail.com"><button class="ladda-button submit send_email" name="submit" data-color="green" data-style="expand-left">SEND MESSAGE</button></a>
+                                        </section>
+
+                                    </form>
+                                </div>
+                                <!-- /Contact Form -->
+                            </div>
+                        </div>
+                    </div>  
+
+                </div>
+            </div>
+            <!-- end contact -->     
+
+         <!-- End Vertical-menu -->
+     </div>
 	</div><!-- End flexy_content -->
 
 
