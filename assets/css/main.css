@@ -709,7 +709,7 @@ h2.resp-accordion:hover {
     }
 
     #profile .cycle-slideshow {
-        display: none;
+        display: block;
     }
 
 }
@@ -790,8 +790,8 @@ h2.resp-accordion:hover {
 #profile .cycle-slideshow {
     margin-top: 19px;
     margin-bottom: 20px;
-    width: 348px;
-    height: 456px;
+    width: 300px;
+    /*height: 456px;*/
 }
 #profile .cycle-slideshow img {
     width: 100%;
@@ -1134,30 +1134,30 @@ ul.about {
     }
 
     .widget-profil{ 	
-        height: 265px !important;
+        height: 550px !important;
         margin-bottom: 20px;
-        float: none;
+        /*float: none;*/
     }
-    #profile_social {
+    /*#profile_social {
         display: none;
     }
     #profile_desc {
         display:none;
-    }
+    }*/
 }
 
 @media only screen  and (max-width: 766px) {
     .widget-profil{ 	
-        height: 285px !important;
+        height: 550px !important;
         margin-bottom: 20px;
-        float: none;
+        /*float: none;*/
     }
-    #profile_social {
+    /*#profile_social {
         display: none;
     }
     #profile_desc {
         display:none;
-    }
+    }*/
 
     .widget-profil h1 {
         font-size: 22px !important;
@@ -1171,13 +1171,13 @@ ul.about {
 
 @media only screen and (min-width : 766px) and (max-width: 800px) {
     .widget-profil{ 	
-        height: 210px !important;
+        height: 550px !important;
         margin-bottom: 20px;
-        float: none;
+        /*float: none;*/
     }
-    #profile_social {
+    /*#profile_social {
         display: none;
-    }
+    }*/
 }
 
 @media only screen and (min-width : 550px) and (max-width : 991px) {
@@ -1190,17 +1190,17 @@ ul.about {
 @media only screen and (min-width : 800px) and (max-width : 991px) {
 
     .widget-profil{ 	
-        height: 210px !important;	
+        height: 550px !important;	
         margin-bottom: 20px;
-        float: none;
-    }
+/*        float: none;
+*/    }
 
-    #profile_social {
+    /*#profile_social {
         display: none;
     }
     #profile_desc {
         border-bottom: 0 !important;
-    }
+    }*/
 }
 
 /*--------------------------------------------------
